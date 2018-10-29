@@ -1,0 +1,50 @@
+﻿
+@{
+    ViewBag.Title = "Company";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!-- Editable inputs -->
+<div class="panel panel-flat">
+    <div class="panel-heading">
+        <h5 class="panel-title">Company Details</h5>
+        <div class="heading-elements">
+            <ul class="icons-list">
+                <li><a data-action="collapse"></a></li>
+                <li><a data-action="reload"></a></li>
+                <li><a data-action="close"></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="panel-body">
+        <p class="content-group-lg">Update Company Details </p>
+        <form class="form-horizontal" action="#">
+            <fieldset class="content-group">
+                <legend class="text-bold">Company Info</legend>
+                <div class="form-group">
+                    <label class="control-label col-lg-2">Name</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control" maxlength="50" placeholder="Enter Company Name" tabindex="1">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2">Phone Number</label>
+                    <div class="col-lg-10">
+                        <input type="number" class="form-control" maxlength="20" placeholder="Enter Company Number"  tabindex="2">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="control-label col-lg-2">Address</label>
+                    <div class="col-lg-10">
+                        <textarea rows="5" cols="5" class="form-control" placeholder="Enter Company Address" maxlength="50"  tabindex="3"></textarea>
+                    </div>
+                </div>                
+            </fieldset>
+            <div class="text-right">
+                <button type="button" class="btn btn-primary"  tabindex="4">Submit <i class="icon-arrow-right14 position-right"></i></button>
+            </div>
+        </form>
+    </div>
+</div>
+<!-- /editable inputs -->
+
